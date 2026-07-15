@@ -1,0 +1,129 @@
+.detail-main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Nom */
+.artiste-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Image */
+.artiste-img {
+    width: 350px;
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Genre + années */
+.artiste-genre,
+.artiste-year {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.artiste-genre {
+    background: #1db954;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* Description */
+.artiste-bio {
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
+
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 15px;
+}
+
+/* Titre albums */
+.artiste-album-label {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #222;
+}
+
+/* Albums en ligne */
+.artiste-albums {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    padding: 10px 16px;
+    border-radius: 25px;
+
+    background: #f0f2f5;
+    border: 1px solid #ddd;
+}
+
+.card-artiste-name {
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .detail-main {
+        padding: 1rem;
+    }
+
+    .artiste-name {
+        font-size: 2rem;
+    }
+
+    .artiste-bio {
+        font-size: 1rem;
+    }
+}
+
+ .btn-retour {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .btn-retour:hover {
+    background-color: #1f2937;
+    color: #ffffff;
+    border-style: solid;
+    border-color: #1f2937;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+}
