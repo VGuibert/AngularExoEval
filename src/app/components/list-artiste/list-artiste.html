@@ -1,0 +1,15 @@
+<section>
+    <ul>    
+    @for(artiste of listOfArtist(); track $index){
+        <li class="list-artiste">
+            <div class="card-artiste">
+                <img src='{{artiste.image}}' alt="image"/>
+                <p class="card-artiste-name">{{artiste.name}}</p>
+                <p class="card-artiste-genre">{{artiste.genre}}</p>
+                <p class="card-artiste-year">{{artiste.yearsActive}}</p>
+                <p class="card-artiste-shortBio">{{artiste.shortBio}}</p>
+            </div>
+        </li>
+    }
+    </ul>
+</section>
