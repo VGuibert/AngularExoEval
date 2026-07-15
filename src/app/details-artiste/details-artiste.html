@@ -1,0 +1,19 @@
+
+<section class="detail-main">
+    <p class="artiste-name">{{detailArtiste().name}}</p>
+    <img class="artiste-img" src='{{detailArtiste().image}}' alt="image"/>
+    <p class="artiste-year">{{detailArtiste().yearsActive}}</p>
+    <p class="artiste-bio">{{detailArtiste().shortBio}}</p>
+    <p class="artiste-genre">{{detailArtiste().genre}}</p>
+    <div class="albums-container">
+    <p class="artiste-album-label" >Album de l'artiste : </p>
+    @for (album of detailArtiste().albums; track $index) {
+        <section class="artiste-albums">
+            <p class="card-artiste-name">{{album.title}}</p>
+        </section>
+    }
+    </div>
+</section>
+<div class="btn-container">
+    <button class="btn-retour" (click)="navigateToHome()">  ← Retour  </button>
+</div>

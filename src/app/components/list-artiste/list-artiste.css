@@ -1,7 +1,6 @@
 /* Section */
 section {
     padding: 2rem;
-    background-color: #f5f5f5;
 }
 
 /* Catalogue */
@@ -31,6 +30,8 @@ section ul {
         box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+    text-align: center;
 }
 
 /* Hover */
@@ -96,4 +97,8 @@ section ul {
 .card-artiste img {
     aspect-ratio: 1 / 1;
     height: auto;
+}
+
+a{
+    text-decoration: none;
 }
